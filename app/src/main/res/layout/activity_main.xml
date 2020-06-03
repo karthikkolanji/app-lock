@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btBiometricApi"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/btKeyguardManager"
+        android:layout_height="wrap_content"
+        android:text="Biometric API"
+        android:layout_marginRight="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btKeyguardManager"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        app:layout_constraintStart_toEndOf="@+id/btBiometricApi"
+        android:text="Keyguard Manager APi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <TextView
+        android:id="@+id/tvDeviceStatusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Status"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btBiometricApi" />
+
+    <TextView
+        android:id="@+id/tvDeviceStatusvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Status Value"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeviceStatusTitle"/>
+
+
+
+    <TextView
+        android:id="@+id/tvStatusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Authentication Status"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvStatusvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Value"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatusTitle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
