@@ -28,60 +28,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
-
-    <TextView
-        android:id="@+id/tvDeviceStatusTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Device Status"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginTop="32dp"
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btBiometricApi" />
-
-    <TextView
-        android:id="@+id/tvDeviceStatusvalue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Device Status Value"
-        android:textSize="20sp"
-        android:layout_marginTop="12dp"
-        android:textColor="@android:color/holo_green_dark"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDeviceStatusTitle"/>
-
-
-
-    <TextView
-        android:id="@+id/tvStatusTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Authentication Status"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:tooltipText="Blank container"
+        app:layout_constraintTop_toBottomOf="@+id/btBiometricApi"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="0dp"/>
 
-
-    <TextView
-        android:id="@+id/tvStatusvalue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Status Value"
-        android:textSize="20sp"
-        android:layout_marginTop="12dp"
-        android:textColor="@android:color/holo_green_dark"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvStatusTitle"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
